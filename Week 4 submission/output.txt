@@ -1,0 +1,35 @@
+R output
+myLogistic(X, Y)
+ (Intercept)          gre          gpa        rank2        rank3        rank4 
+-3.989979073  0.002264426  0.804037549 -0.675442928 -1.340203916 -1.551463677 
+
+
+
+Python output
+[[ 1.]
+ [ 1.]
+ [ 1.]
+ [ 1.]
+ [ 1.]
+ [ 1.]]
+                 Generalized Linear Model Regression Results                  
+==============================================================================
+Dep. Variable:                  admit   No. Observations:                  400
+Model:                            GLM   Df Residuals:                      396
+Model Family:                Binomial   Df Model:                            3
+Link Function:                  logit   Scale:                             1.0
+Method:                          IRLS   Log-Likelihood:                -229.72
+Date:                Thu, 29 Oct 2015   Deviance:                       459.44
+Time:                        22:22:44   Pearson chi2:                     399.
+No. Iterations:                     6                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [95.0% Conf. Int.]
+------------------------------------------------------------------------------
+Intercept     -3.4495      1.133     -3.045      0.002        -5.670    -1.229
+gre            0.0023      0.001      2.101      0.036         0.000     0.004
+gpa            0.7770      0.327      2.373      0.018         0.135     1.419
+rank2          -0.5600     0.127     -4.405      0.000        -0.809    -0.311
+rank3	       -1.365	   0.512     -3.502      0.000	      -0.700    -0.02
+rank4	       -1.425      0.323     -3.533      0.002	      -0.652    -0.063
+==============================================================================
+<statsmodels.genmod.generalized_linear_model.GLMResultsWrapper object at 0x0000000017BA4A20>
